@@ -1,0 +1,18 @@
+
+/*nav*/
+.header{
+  padding:1rem;
+  border-radius:0%;
+}
+
+/*hero*/
+.hero{
+  background-image:url("../images/hero_image2/bootcamp-heroimage.jpg");
+  background:cover;
+  height:50rem;
+}
+
+/*media icons*/
+.mediabox{
+  background-color:gray;
+}
