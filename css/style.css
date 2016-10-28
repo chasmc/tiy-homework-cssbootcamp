@@ -1,22 +1,35 @@
 
-/*nav*/
+
 .header{
-  /*padding:1rem;*/
   border-radius:0%;
-  background-color:#39474e
+  background-color:#39474e;
+  margin: 0;
 }
 
-.navfillerleft{
-  margin-top:2%;
+
+.navbar {
+  border: 0;
 }
 
-.navfillerright{
 
+
+/*nav text color*/
+.navbar-default .navbar-nav.navbar-right>li>a{
+    color:gray;
 }
 
-.navfillerleft .navtext{
-  color:#fff;
+.navbar-default .navbar-nav.navbar-right>li>a:hover{
+    color:green;
 }
+
+.navbar-default .navbar-nav.navbar-left>li>a{
+    color:gray;
+}
+
+.navbar-default .navbar-nav.navbar-left>li>a:hover{
+    color:transparent;
+}
+
 
 /*logo*/
 .logo{
@@ -30,20 +43,6 @@
 .navbar-inverse .navbar-nav>.active>a:hover {
     color: #9d9d9d;
     background-color:transparent;
-}
-
-.navbar{
-  margin:0;
-}
-
-/*nav text color*/
-.navbar-inverse .navbar-nav>li>a:focus, .navbar-inverse .navbar-nav>li>a:hover {
-    color: #9d9d9d;
-    background-color: transparent;
-}
-
-.navbar-inverse .navbar-nav>li>a {
-    color: #fff;
 }
 
 /*hero*/
