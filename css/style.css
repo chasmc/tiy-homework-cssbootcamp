@@ -1,18 +1,78 @@
 
 /*nav*/
 .header{
-  padding:1rem;
+  /*padding:1rem;*/
   border-radius:0%;
+  background-color:#39474e
+}
+
+.navfillerleft{
+  margin-top:2%;
+}
+
+.navfillerright{
+
+}
+
+.navfillerleft .navtext{
+  color:#fff;
+}
+
+/*logo*/
+.logo{
+  bottom:10px;
+  position:relative;
+}
+
+/*turn box around logo off*/
+.navbar-inverse .navbar-nav>.active>a,
+.navbar-inverse .navbar-nav>.active>a:focus,
+.navbar-inverse .navbar-nav>.active>a:hover {
+    color: #9d9d9d;
+    background-color:transparent;
+}
+
+.navbar{
+  margin:0;
+}
+
+/*nav text color*/
+.navbar-inverse .navbar-nav>li>a:focus, .navbar-inverse .navbar-nav>li>a:hover {
+    color: #9d9d9d;
+    background-color: transparent;
+}
+
+.navbar-inverse .navbar-nav>li>a {
+    color: #fff;
 }
 
 /*hero*/
 .hero{
   background-image:url("../images/hero_image2/bootcamp-heroimage.jpg");
-  background:cover;
-  height:50rem;
+  background-size:cover;
+  height:70rem;
+}
+
+.herotext{
+  color:#fff;
+  font-size:60px;
+  font-family:'PT Serif', serif;
+  font-weight:700;
+  position:relative;
+  top:275px;
+  left:5%;
 }
 
 /*media icons*/
 .mediabox{
-  background-color:gray;
+  background-color:#EEEEEE;
+  padding-right:3%;
+}
+
+
+
+/*employers*/
+.employers{
+  background-image:url("../images/hero_image2/bootcamp-image2.jpg");
+  background-size:cover;
 }
