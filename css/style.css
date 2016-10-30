@@ -7,6 +7,7 @@ body{
   border-radius:0%;
   background-color:#39474e;
   margin: 0;
+  padding:2%;
 }
 
 
@@ -14,32 +15,16 @@ body{
   border: 0;
 }
 
-
-
-/*nav text color*/
-.navbar-default .navbar-nav.navbar-right>li>a{
-    color:gray;
-}
-
-.navbar-default .navbar-nav.navbar-right>li>a:hover{
-    color:green;
-}
-
-.navbar-default .navbar-nav.navbar-left>li>a{
-    color:gray;
-}
-
-.navbar-default .navbar-nav.navbar-left>li>a:hover{
-    color:transparent;
-}
-
-
 /*logo*/
-.logo{
-  bottom:10px;
-  position:relative;
+.ironlogo{
+  float:left;
 }
-
+.ironlogo img{
+  height:7rem;
+}
+.ironlogo:hover{
+  clear:both;
+}
 /*turn box around logo off*/
 .navbar-inverse .navbar-nav>.active>a,
 .navbar-inverse .navbar-nav>.active>a:focus,
@@ -48,11 +33,63 @@ body{
     background-color:transparent;
 }
 
+.navbuttonright{
+  background-color:#6fbbb7;
+  border:1px solid #6fbbb7;
+  border-radius:4px;
+  padding:1rem;
+  margin-top:1.5rem;
+  font-family:sans-serif;
+  text-align:center;
+  font-style:normal;
+  float:right;
+}
+.getstarted{
+  clear:both;
+  color:#fff;
+}
+.getstarted:hover{
+  color:#6fbbb7;
+  text-decoration:none;
+}
+.navbuttonright:hover{
+  background-color:#fff;
+  border:transparent;
+}
+
+/*nav links*/
+.navbar-default .navbar-nav.navbar-right>li>a{
+  color: rgba(181,183,190,0.6);
+  font-size: 1.4rem;
+  margin-top:1rem;
+  margin-right:1rem;
+}
+
+.navbar-default .navbar-nav.navbar-right>li>a:hover{
+    text-decoration:underline;
+}
+
+.navbar-default .navbar-nav.navbar-left>li>a{
+    color:#fff;
+    font-size:1.7rem;
+    font-family:sans-serif;
+    margin-top:1rem;
+    margin-left:2rem;
+}
+
+.navbar-default .navbar-nav.navbar-left>li>a:hover{
+  border-bottom: solid 2px #6fbbb7;
+  color: rgba(255,255,255,0.4);
+  font-weight: 500;
+  opacity: 1;
+  text-decoration: none;
+}
+
 /*hero*/
 .hero{
   background-image:url("../images/hero_image2/bootcamp-heroimage.jpg");
   background-size:cover;
-  height:70rem;
+  height:675px;
 }
 
 .herotext{
@@ -251,11 +288,44 @@ body{
 }
 
 @media (max-width:767px){
+
+.ironlogo{
+  margin-bottom:1rem;
+}
+
+.navbuttonright{
+  /*position:relative;
+  bottom:30rem;*/
+  float:left
+}
+  /*burger menu links*/
+  .navbar-default .navbar-nav.navbar-right>li>a{
+    clear:both;
+    color:#fff;
+    font-size: 1.4rem;
+  }
+
+  .navbar-default .navbar-nav.navbar-right>li>a:hover{
+    color: rgba(181,183,190,0.6);
+    text-decoration:underline;
+  }
+
+  .navbar-default .navbar-nav.navbar-left>li>a{
+    color:#fff;
+    font-size:1.4rem;
+    margin-left:0;
+  }
+
+  .navbar-default .navbar-nav.navbar-left>li>a:hover{
+    color: rgba(181,183,190,0.6);
+    border-bottom:transparent;
+    text-decoration:underline;
+  }
+
+  /*tiyicons*/
   .tiyicons{
     max-width:200px;
-    display:block;
-    margin:0 auto;
-    margin-left:43%;
+    margin-left:40%;
     margin-top:15%;
   }
   .tiyicons p{
