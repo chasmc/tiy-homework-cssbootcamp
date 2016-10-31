@@ -96,27 +96,38 @@
     <div class="container">
       <div class="row info1">
         <div class="col-md-8">
-          <h2>12-week code school</h2>
-          <p>Go from zero to job ready in an immersive environment. Learn the latest skills from</p>
-          <p>industry professionals and connect with employers through our Career Support program.</p>
-          <h2>Free crash courses</h2>
-          <p>Our free, one-night crash courses are the perfect way to get your hands dirty with a fun</p>
-          <p>project and gain the confidence to explore the world of programming.</p>
-          <h2>Corporate Training</h2>
-          <p>If you already lead or work on a development team, our recruiting, onboarding, reskilling and </p>
-          <p>upskilling programs provide proven pathways to grow your team.</p>
+          <div class=class="par">
+            <h2>12-week code school</h2>
+            <p>Go from zero to job ready in an immersive environment. Learn the latest skills from</p>
+            <p>industry professionals and connect with employers through our Career Support program.</p>
+          </div>
+          <div class=class="par">
+            <h2>Free crash courses</h2>
+            <p>Our free, one-night crash courses are the perfect way to get your hands dirty with a fun</p>
+            <p>project and gain the confidence to explore the world of programming.</p>
+          </div>
+          <div class=class="par">
+            <h2>Corporate Training</h2>
+            <p>If you already lead or work on a development team, our recruiting, onboarding, reskilling and </p>
+            <p>upskilling programs provide proven pathways to grow your team.</p>
+          </div>
         </div>
 
         <div class="col-md-4">
           <form class="forms">
-            <strong>We'll call you</strong><br>
-            <small>Enter your phone number below and we'll give you a ring in the next few days.</small>
-            <label for="">First Name</label>
-            <input type="text" id="name" name="user_name" />
-            <label for="">Last Name</label>
-            <input type="text" id="name" name="user_name" />
-            <input type="tel" placeholder="Format: 1234567890" pattern="[0-9]{10}">
-            <p class="formsbutton">Gimme a ring</p>
+            <strong>Short on time?</strong><br>
+            <small>Want a quick overview explaining what we’re all about?
+              We’ll email you our 2016 fact sheet, complete with a snapshot of
+              our locations, courses, job data and more.</small>
+            <label for="first name"></label>
+            <input type="text" placeholder="First Name" id="name" name="user_name" />
+            <label for="last name"></label>
+            <input type="text" placeholder="Last Name" id="name" name="user_name" />
+            <input type="email" placeholder="example@email.com">
+
+            <div class="formsbutton" id="factsheet">
+              <a href="#">Email me the fact sheet</a>
+            </div>
           </form>
         </div>
       </div>
@@ -224,9 +235,9 @@
         <div class="col-md-4 col-sm-12">
           <img src="images/employer-icons/ally-bank-logo.png">
         </div>
-        <!-- botton box -->
+        <!-- button box -->
         <div class= "col-md-12 col-sm-12 col-xs-12">
-          <p class="employersbutton">Learn more about how we work with companies</p>
+          <a href="#" class="employersbutton">Learn more about how we work with companies</a>
         </div>
       </div>
     </div>
@@ -253,31 +264,38 @@
         <!-- form -->
         <div class="col-md-3 col-sm-4">
           <form class="forms">
-            <strong>We'll call you</strong><br>
-            <small>Enter your phone number below and we'll give you a ring in the next few days.</small>
-            <label for="">First Name</label>
-            <input type="text" id="name" name="user_name" />
-            <label for="">Last Name</label>
-            <input type="text" id="name" name="user_name" />
-            <input type="tel" placeholder="Format: 1234567890" pattern="[0-9]{10}">
-            <p class="formsbutton">Gimme a ring</p>
-          </form>
-        </div>
+              <strong>We'll call you</strong><br>
+              <small>Enter your phone number below and we'll give you a ring in the next few days.</small>
+              <label for="first name"></label>
+              <input type="text" placeholder="First Name" id="name" name="user_name" />
+              <label for="last name"></label>
+              <input type="text" placeholder="Last Name" id="name" name="user_name" />
+              <input type="tel" placeholder="Phone Number" pattern="[0-9]{10}">
+
+            <div class="formsbutton">
+              <a href="#">Gimme a ring</a>
+            </div>
+          </div>
+        </form>
         <!-- form -->
         <div class="col-md-3 col-sm-4">
           <form class="forms">
-            <strong>We'll call you</strong><br>
-            <small>Enter your phone number below and we'll give you a ring in the next few days.</small>
-            <label for="">First Name</label>
-            <input type="text" id="name" name="user_name" />
-            <label for="">Last Name</label>
-            <input type="text" id="name" name="user_name" />
-            <input type="tel" placeholder="Format: 1234567890" pattern="[0-9]{10}">
-            <p class="formsbutton">Email me</p>
+              <strong>We'll email you</strong><br>
+              <small>Enter your phone number below and we'll give you a ring in the next few days.</small>
+              <label for="first name"></label>
+              <input type="text" placeholder="First Name" id="name" name="user_name">
+              <label for="last name"></label>
+              <input type="text" placeholder="Last Name" id="name" name="user_name" />
+              <input type="email" placeholder="example@email.com">
+
+            <div class="formsbutton">
+              <a href="#">Email me</a>
+            </div>
           </form>
         </div>
       </div>
     </div>
+
 
     <!-- footer -->
     <div class="container-fluid">

@@ -3,6 +3,7 @@
 body{
   font-family:'PT Serif', serif;
 }
+
 .header{
   border-radius:0%;
   background-color:#39474e;
@@ -20,10 +21,11 @@ body{
   float:left;
 }
 .ironlogo img{
+  clear:both;
   height:7rem;
 }
-.ironlogo:hover{
-  clear:both;
+.ironlogo img:hover {
+  transform: scale(1.1);
 }
 /*turn box around logo off*/
 .navbar-inverse .navbar-nav>.active>a,
@@ -49,12 +51,11 @@ body{
   color:#fff;
 }
 .getstarted:hover{
-  color:#6fbbb7;
+  color:#fff;
   text-decoration:none;
 }
 .navbuttonright:hover{
-  background-color:#fff;
-  border:transparent;
+  transform:scale(1.1);
 }
 
 /*nav links*/
@@ -89,6 +90,7 @@ body{
 .hero{
   background-image:url("../images/hero_image2/bootcamp-heroimage.jpg");
   background-size:cover;
+  background-position:center;
   height:675px;
 }
 
@@ -110,21 +112,16 @@ body{
 /*info1*/
 .info1{
   color:#727d84;
-  position: relative;
-  min-height: 1px;
-  padding-left: 15px;
-  padding-right: 15px;
+  position:relative;
+  min-height:1px;
+  padding-left:15px;
+  padding-right:15px;
   margin:5rem 0;
 }
 .info1 h2{
-  font-size: 23px;
-  font-weight: bold;
-  font-style: italic;
-}
-.info1 p{
-  font-size: 18px;
-  font-weight: 400;
-  line-height: 1.6;
+  font-size:23px;
+  font-weight:bold;
+  font-style:italic;
 }
 
 /*tiy icons box*/
@@ -220,11 +217,15 @@ body{
   border:1px solid #6fbbb7;
   border-radius:4px;
   border-bottom: 2px #74A19C solid;
-  color:white;
+  color:#fff;
   padding:2rem 8rem;
   display:inline-block;
   margin-top:5rem;
-
+}
+.employersbutton:hover{
+  transform:scale(1.1);
+  text-decoration:none;
+  color:#fff;
 }
 /*.buttonbox{
   margin:15rem 40rem;
@@ -234,7 +235,7 @@ body{
 .questions{
   background-color:#fff;
   margin:15px;
-
+  padding:5rem;
 }
 .questions h4{
   color: #838F95;
@@ -264,29 +265,42 @@ body{
   border-bottom: 1px solid #D5D5D5;
   padding:5%;
   height:350px;
-  position:relative;
 }
+
 .formsbutton{
   background-color:#6fbbb7;
   border:1px solid #6fbbb7;
   border-radius:5px;
-  border-bottom: 2px #74A19C solid;
-  color:white;
+  width:20rem;
+  border-bottom:2px #74A19C solid;
   padding:1rem;
   text-align:center;
-  font-size: 17px;
-  font-style: normal;
-  font-weight: bolder;
-  position:absolute;
-  bottom:2rem;
-  left:7rem;
+  font-size:17px;
+  font-style:normal;
+  font-weight:bolder;
+  margin:0 auto;
+  margin-top:11rem;
+}
+.forms #factsheet{
+  width:28rem;
+}
+.formsbutton a{
+  color:#fff;
+}
+.formsbutton:hover{
+  transform:scale(1.1);
+}
+.formsbutton a:hover{
+  text-decoration:none;
 }
 
+
 .footer{
-  background-color:black;
+  background-color:#39474e;;
   height:100px;
 }
 
+/*media queries*/
 @media (max-width:767px){
 
 .ironlogo{
@@ -322,6 +336,12 @@ body{
     text-decoration:underline;
   }
 
+  #factsheet{
+    position:relative;
+    bottom:20px;
+    right:9px;
+  }
+
   /*tiyicons*/
   .tiyicons{
     max-width:200px;
@@ -330,5 +350,10 @@ body{
   }
   .tiyicons p{
     margin-bottom:25%;
+  }
+
+  /*questions*/
+  .questions{
+    margin:0;
   }
 }
